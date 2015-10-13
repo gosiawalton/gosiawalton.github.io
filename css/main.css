@@ -200,18 +200,32 @@ h1.logo small{
   background: rgba(0, 0, 0, 0.2);
 }
 
-.textOverlay {
+.textOverlay h1,
+.textOverlay h2,
+.textOverlay h3,
+.textOverlay h4,
+.textOverlay h5 {
   color: white;
   padding-left: 2%;
   padding-right: 2%;
+}
+
+.textOverlay h1 {
+  font-weight: bolder;
 }
 
 .textOverlay a.unstyled {
   color: white;
 }
 
-.blackTextOverlay {
-  color: black;
+.highlightTextOverlay a,
+.highlightTextOverlay h1,
+.highlightTextOverlay h2,
+.highlightTextOverlay h3,
+.highlightTextOverlay h4,
+.highlightTextOverlay h5 {
+  font-weight: lighter !important;
+  transition: 1s background;
 }
 
 .textOverlay .row{
@@ -235,8 +249,8 @@ a.unstyled {
   cursor: alias;
 }
 
-.blackTextOverlay a.unstyled {
-  color: black;
+.highlightTextOverlay a.unstyled {
+  font-weight: lighter !important;
 }
 
 .masthead {

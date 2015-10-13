@@ -7,12 +7,12 @@ jQuery(document).ready(function($) {
     if (video.paused) {
       video.play();
       video.classList.remove("video_overlay");
-      textOverlay.classList.remove("blackTextOverlay");
+      textOverlay.classList.remove("highlightTextOverlay");
       pauseButton.innerHTML = $(pauseButton).html().replace('On', 'Off');
     } else {
       video.pause();
       video.classList.add("video_overlay");
-      textOverlay.classList.add("blackTextOverlay");
+      textOverlay.classList.add("highlightTextOverlay");
       pauseButton.innerHTML = $(pauseButton).html().replace('Off', 'On');
     }
   }
