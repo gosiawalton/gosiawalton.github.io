@@ -2,8 +2,6 @@ jQuery(document).ready(function($) {
   var video = document.getElementById("background_video");
   var pauseButton = document.querySelector(".pause button");
 
-  video.play();
-
   function fadeVideo() {
     video.classList.add("video_overlay");
   }
