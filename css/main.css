@@ -175,6 +175,10 @@ html, body {
   background-size: contain;
 }
 
+#group10 {
+  z-index: 6;
+}
+
 /* other styles
   --------------------------------------------- */
 
@@ -293,4 +297,13 @@ a.unstyled {
 .pause button:hover {
   background: rgba(0, 0, 0, 0.5);
   cursor: no-drop;
+}
+
+.footer-block {
+  margin-top: 5%;
+}
+
+.last-block a,
+.social-links a {
+  color: black;
 }
