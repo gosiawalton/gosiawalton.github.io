@@ -218,6 +218,14 @@ h1.logo small{
   margin-bottom: 1%;
 }
 
+.boxed {
+  border: 1px solid white;
+  width: 100%;
+  padding: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
