@@ -200,6 +200,11 @@ h1.logo small{
   background: rgba(0, 0, 0, 0.2);
 }
 
+.textOverlay {
+  margin-left: 3%;
+  padding-right: 2%;
+}
+
 .textOverlay h1,
 .textOverlay h2,
 .textOverlay h3,
