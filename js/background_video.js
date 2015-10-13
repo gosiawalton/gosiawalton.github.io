@@ -1,15 +1,18 @@
 jQuery(document).ready(function($) {
   var video = document.getElementById("background_video");
   var pauseButton = document.querySelector(".pause button");
+  var textOverlay = document.querySelector(".textOverlay");
 
   function toggleVideoPauseState() {
     if (video.paused) {
       video.play();
       video.classList.remove("video_overlay");
+      textOverlay.classList.remove("blackTextOverlay");
       pauseButton.innerHTML = $(pauseButton).html().replace('On', 'Off');
     } else {
       video.pause();
       video.classList.add("video_overlay");
+      textOverlay.classList.add("blackTextOverlay");
       pauseButton.innerHTML = $(pauseButton).html().replace('Off', 'On');
     }
   }
