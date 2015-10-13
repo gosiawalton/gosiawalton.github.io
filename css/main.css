@@ -218,7 +218,7 @@ h1.logo small{
   color: white;
 }
 
-.highlightTextOverlay a,
+/*.highlightTextOverlay a,
 .highlightTextOverlay h1,
 .highlightTextOverlay h2,
 .highlightTextOverlay h3,
@@ -226,7 +226,7 @@ h1.logo small{
 .highlightTextOverlay h5 {
   font-weight: lighter !important;
   transition: 1s background;
-}
+}*/
 
 .textOverlay .row{
   margin-bottom: 1%;
@@ -249,9 +249,9 @@ a.unstyled {
   cursor: alias;
 }
 
-.highlightTextOverlay a.unstyled {
+/*.highlightTextOverlay a.unstyled {
   font-weight: lighter !important;
-}
+}*/
 
 .masthead {
   border-radius: 180px;
