@@ -16,9 +16,7 @@ jQuery(document).ready(function($) {
 
   video.addEventListener('ended', function() {
     // only functional if "loop" is removed
-    video.pause();
-    // to capture IE10
-    video.classList.add("video_overlay");
+    toggleVideoPauseState();
   });
 
   video.addEventListener('click', function() {
