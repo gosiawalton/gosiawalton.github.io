@@ -26,6 +26,10 @@ jQuery(document).ready(function($) {
     toggleVideoPauseState();
   });
 
+  textOverlay.addEventListener('click', function() {
+    toggleVideoPauseState();
+  });
+
   pauseButton.addEventListener("click", function() {
     toggleVideoPauseState()
   });
