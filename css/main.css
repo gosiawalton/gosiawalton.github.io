@@ -300,7 +300,7 @@ a.unstyled {
 }
 
 .footer-block {
-  margin-top: 1%;
+  background: white url(../images/transparent.png) no-repeat 50% 50%;
 }
 
 .last-block a,
