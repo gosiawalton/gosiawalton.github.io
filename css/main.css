@@ -26,159 +26,159 @@ video {
   transition: 1s opacity;
 }
 
-@media (max-width: 992px) {
-    img {
-        width: 70%;
-        margin-bottom: 2em;
+@media (min-width: 768px) {
+    ul.list-exhibitions li {
+      margin-left: 5em;
     }
 }
 
+
 /* base styles
   --------------------------------------------- */
+@media (min-width: 992px) {
+  .parallax__group .body {
+    margin-top: 7%;
+    max-width: 900px;
+    height: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index: 999;
+  }
+  html, body {
+    overflow: hidden;
+  }
+  .parallax {
+    height: 500px;
+    /* fallback for older browsers */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+  .parallax__group {
+    position: relative;
+    height: 500px;
+    /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .parallax__layer--fore {
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.7);
+    z-index: 1;
+  }
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+  }
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+  }
+  .parallax__layer--deep {
+    -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+  }
 
-.parallax__group .body {
-  margin-top: 7%;
-  max-width: 900px;
-  height: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-  z-index: 999;
-}
-html, body {
-  overflow: hidden;
-}
-.parallax {
-  height: 500px;
-  /* fallback for older browsers */
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-perspective: 300px;
-  perspective: 300px;
-}
-.parallax__group {
-  position: relative;
-  height: 500px;
-  /* fallback for older browsers */
-  height: 100vh;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.parallax__layer--fore {
-  -webkit-transform: translateZ(90px) scale(.7);
-  transform: translateZ(90px) scale(.7);
-  z-index: 1;
-}
-.parallax__layer--base {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  z-index: 4;
-}
-.parallax__layer--back {
-  -webkit-transform: translateZ(-300px) scale(2);
-  transform: translateZ(-300px) scale(2);
-  z-index: 3;
-}
-.parallax__layer--deep {
-  -webkit-transform: translateZ(-600px) scale(3);
-  transform: translateZ(-600px) scale(3);
-  z-index: 2;
-}
 
+  /* group styles
+    --------------------------------------------- */
 
-/* group styles
-  --------------------------------------------- */
+  #group1 {
+    z-index: 5;
+    /* slide over group 2 */
+  }
+  #group1 .parallax__layer--base {
+    background: white url(../images/irid_detail_2.jpg) no-repeat 50% 50%;
+    background-size: cover;
+  }
+  #group2 {
+    z-index: 3;
+    /* slide under groups 1 and 3 */
+  }
+  #group2 .parallax__layer--back {
+    background: white url(../images/irid_detail_3.jpg) no-repeat 50% 50%;
+    background-size: cover;
+  }
+  #group3 {
+    z-index: 4;
+    /* slide over group 2 and 4 */
+  }
+  #group3 .parallax__layer--base {
+    background: white url(../images/irid_detail_2.jpg) no-repeat 50% 50%;
+    background-size: cover;
+  }
+  #group4 {
+    z-index: 2;
+    /* slide under group 3 and 5 */
+  }
+  #group4 .parallax__layer--deep {
+    background: white url(../images/orange.jpg) no-repeat 50% 50%;
+    background-size: cover;
+  }
+  #group5 {
+    z-index: 3;
+    /* slide over group 4 and 6 */
+  }
+  #group5 .parallax__layer--base {
+    background: lightgray;
+    background: rgba(255, 255, 255, 0.23);
+  }
 
-#group1 {
-  z-index: 5;
-  /* slide over group 2 */
-}
-#group1 .parallax__layer--base {
-  background: white url(../images/irid_detail_2.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
-#group2 {
-  z-index: 3;
-  /* slide under groups 1 and 3 */
-}
-#group2 .parallax__layer--back {
-  background: white url(../images/irid_detail_3.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
-#group3 {
-  z-index: 4;
-  /* slide over group 2 and 4 */
-}
-#group3 .parallax__layer--base {
-  background: white url(../images/irid_detail_2.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
-#group4 {
-  z-index: 2;
-  /* slide under group 3 and 5 */
-}
-#group4 .parallax__layer--deep {
-  background: white url(../images/orange.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
-#group5 {
-  z-index: 3;
-  /* slide over group 4 and 6 */
-}
-#group5 .parallax__layer--base {
-  background: lightgray;
-  background: rgba(255, 255, 255, 0.23);
-}
+  /*#group6 {
+    z-index: 2;
+  }
+  #group6 .parallax__layer--back {
+    background: white url(../images/transparent.png) no-repeat 50% 50%;
+    background-size: cover;
+  }*/
 
-/*#group6 {
-  z-index: 2;
-}
-#group6 .parallax__layer--back {
-  background: white url(../images/transparent.png) no-repeat 50% 50%;
-  background-size: cover;
-}*/
+  #group7 {
+    z-index: 3;
+  }
+  #group7 .parallax__layer--fore {
+    background: white url(../images/pink.jpg) no-repeat 50% 50%;
+    background-size: cover;
+  }
+  #group7 .parallax__layer--back {
+    background: white url(../images/transparent.png) no-repeat 50% 50%;
+    background-size: contain;
+  }
 
-#group7 {
-  z-index: 3;
-}
-#group7 .parallax__layer--fore {
-  background: white url(../images/pink.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
-#group7 .parallax__layer--back {
-  background: white url(../images/transparent.png) no-repeat 50% 50%;
-  background-size: contain;
-}
+  #group8 {
+    z-index: 6;
+  }
+  #group8 .parallax__layer--fore {
+    /*background: white url(../images/yellow.png) no-repeat 50% 50%;*/
+    background: white url(../images/transparent.png) no-repeat 50% 50%;
+    background-size: contain;
+  }
+  #group9 {
+    z-index: 2;
+    /* slide under group 3 and 5 */
+  }
+  #group9 .parallax__layer--base {
+    background: rgba(255, 255, 255, 0.6) url(../images/irid_detail.png) no-repeat 50% 50%;
+    background-size: contain;
+  }
 
-#group8 {
-  z-index: 6;
+  #group10 {
+    z-index: 6;
+  }
 }
-#group8 .parallax__layer--fore {
-  /*background: white url(../images/yellow.png) no-repeat 50% 50%;*/
-  background: white url(../images/transparent.png) no-repeat 50% 50%;
-  background-size: contain;
-}
-#group9 {
-  z-index: 2;
-  /* slide under group 3 and 5 */
-}
-#group9 .parallax__layer--base {
-  background: rgba(255, 255, 255, 0.6) url(../images/irid_detail.png) no-repeat 50% 50%;
-  background-size: contain;
-}
-
-#group10 {
-  z-index: 6;
-}
-
 /* other styles
   --------------------------------------------- */
 
