@@ -103,7 +103,6 @@ video {
   }
   #group1 .parallax__layer--base {
     /* background: white url(../images/irid_detail_2.jpg) no-repeat 50% 50%; */
-	background: white url(../images/update2016/2.jpg) no-repeat 50% 50%;	
     background-size: cover;
   }
   #group2 {
@@ -176,7 +175,7 @@ video {
     /* slide under group 3 and 5 */
   }
   #group9 .parallax__layer--base {
-    background: rgba(255, 255, 255, 0.6) url(../images/irid_detail.png) no-repeat 50% 50%;
+    /* background: rgba(255, 255, 255, 0.6) url(../images/irid_detail.png) no-repeat 50% 50%; */
     background-size: contain;
   }
 
