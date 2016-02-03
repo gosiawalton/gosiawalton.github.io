@@ -102,7 +102,8 @@ video {
     /* slide over group 2 */
   }
   #group1 .parallax__layer--base {
-    background: white url(../images/irid_detail_2.jpg) no-repeat 50% 50%;
+    /* background: white url(../images/irid_detail_2.jpg) no-repeat 50% 50%; */
+	background: white url(../images/update2016/2.jpg) no-repeat 50% 50%;	
     background-size: cover;
   }
   #group2 {
@@ -110,7 +111,8 @@ video {
     /* slide under groups 1 and 3 */
   }
   #group2 .parallax__layer--back {
-    background: white url(../images/irid_detail_3.jpg) no-repeat 50% 50%;
+    /* background: white url(../images/irid_detail_3.jpg) no-repeat 50% 50%; */
+	background: white url(../images/update2016/1.jpg) no-repeat 50% 50%;
     background-size: cover;
   }
   #group3 {
@@ -118,7 +120,8 @@ video {
     /* slide over group 2 and 4 */
   }
   #group3 .parallax__layer--base {
-    background: white url(../images/irid_detail_2.jpg) no-repeat 50% 50%;
+    /* background: white url(../images/irid_detail_2.jpg) no-repeat 50% 50%; */
+	background: white url(../images/update2016/2.jpg) no-repeat 50% 50%;
     background-size: cover;
   }
   #group4 {
@@ -126,7 +129,8 @@ video {
     /* slide under group 3 and 5 */
   }
   #group4 .parallax__layer--deep {
-    background: white url(../images/orange.jpg) no-repeat 50% 50%;
+    /* background: white url(../images/orange.jpg) no-repeat 50% 50%; */
+	background: white url(../images/update2016/3.jpg) no-repeat 50% 50%;
     background-size: cover;
   }
   #group5 {
@@ -150,7 +154,8 @@ video {
     z-index: 3;
   }
   #group7 .parallax__layer--fore {
-    background: white url(../images/pink.jpg) no-repeat 50% 50%;
+    /* background: white url(../images/pink.jpg) no-repeat 50% 50%; */
+	background: white url(../images/update2016/4.jpg) no-repeat 50% 50%;
     background-size: cover;
   }
   #group7 .parallax__layer--back {
