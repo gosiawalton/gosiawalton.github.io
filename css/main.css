@@ -171,7 +171,7 @@ video {
     /* slide under group 3 and 5 */
   }
   #group9 .parallax__layer--base {
-    background: rgba(255, 255, 255, 0.6) url(../images/irid_detail.png) no-repeat 50% 50%;
+    background: rgba(255, 255, 255, 0.6) url(../images/irid_detail.jpg) no-repeat 50% 50%;
     background-size: contain;
   }
 
