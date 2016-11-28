@@ -229,7 +229,7 @@ h1.logo small{
   color: white;
 }
 
-/*.highlightTextOverlay a,
+.highlightTextOverlay a,
 .highlightTextOverlay h1,
 .highlightTextOverlay h2,
 .highlightTextOverlay h3,
@@ -237,7 +237,17 @@ h1.logo small{
 .highlightTextOverlay h5 {
   font-weight: lighter !important;
   transition: 1s background;
-}*/
+  color: #F3574B;
+}
+
+.highlightTextOverlay a.unstyled {
+  font-weight: lighter !important;
+  color: #F3574B;
+}
+
+.highlightTextOverlay .boxed {
+  border-color: #F3574B;
+}
 
 .textOverlay .row{
   margin-bottom: 2.5%;
@@ -263,10 +273,6 @@ a.unstyled {
   text-decoration: none;
   cursor: alias;
 }
-
-/*.highlightTextOverlay a.unstyled {
-  font-weight: lighter !important;
-}*/
 
 .masthead {
   border-radius: 180px;

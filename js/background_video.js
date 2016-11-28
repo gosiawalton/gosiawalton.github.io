@@ -17,6 +17,10 @@ jQuery(document).ready(function($) {
     }
   }
 
+  video.addEventListener('play', function() {
+    textOverlay.classList.remove("highlightTextOverlay");
+  });
+
   video.addEventListener('ended', function() {
     // only functional if "loop" is removed
     toggleVideoPauseState();
